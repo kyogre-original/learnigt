@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function pow(x, y) {
+        var num = 1;
+        var w = y;
+        return (function r() {
+            w -= 1;
+            num *= x;
+            if (w == 0) {
+                return num
+            }
+            else r();
+        })();.0
+        return num;
+    }
+
+
+</script>
+</body>
+</html>
